@@ -40,3 +40,15 @@ int main() {
 
 	return 0;
 }
+
+/*
+If we first look at the case where the array A is already sorted in increasing order, the running time of heapsort becomes O(N * log N). 
+This is because, during the buildHeap phase, each element is inserted into the heap, resulting in a heap with N elements. 
+The heapify operation takes log N time for each insertion, and there are N elements to insert.
+
+For the case where the array A is sorted in decreasing order, the running time is also O(N * log N). 
+While building the heap, each element is compared with its parent and swapped if necessary, 
+resulting in log N comparisons for each element, and there are N elements.
+
+Heapsort has a worst-case time complexity of O(N * log N) regardless of the initial order of the elements in the array.
+*/
